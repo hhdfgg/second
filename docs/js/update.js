@@ -8,7 +8,7 @@
 function update() {
 
     // マウスがクリックされたら
-    if (game.input.mousePointer.isDown || game.input.pointer1.isDown)
+    if (game.input.mousePointer.isDown || game.input.mousePointer1.isDown)
     {
         // マウスのポインタの速度を400にする　400/pixel
         game.physics.arcade.moveToPointer(dude, 400);
