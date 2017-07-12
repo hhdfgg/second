@@ -8,7 +8,7 @@
 function update() {
 
     // マウスがクリックされたら
-    if (game.input.mousePointer.isDown/* || game.input.pointer1.isDown*/)
+    if (game.input.mousePointer.isDown)
     {
         // マウスのポインタの速度を400にする　400/pixel
         game.physics.arcade.moveToPointer(dude, 400);
@@ -57,4 +57,10 @@ function update() {
 // dudeに、最初に設定したスプライト、starに、次に設定したグループ内のスプライトが渡される
 function pickStar(dude, star){
     star.kill();
+
+    stars.starCount--;
+    if(stars.starCount <= 0)
+    {
+        console.log("clear");
+    }
 }
