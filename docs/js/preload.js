@@ -6,8 +6,8 @@
  * @copyright 2017 YuTanaka@AmuseOne
  */
 function preload() {
-        this.load.baseURL = "https://hhdfgg.github.io/second/";
-        this.load.crossOrigin = "anonymous";
+    game.load.baseURL = "https://hhdfgg.github.io/second/";
+    game.load.crossOrigin = "anonymous";
     
     game.load.image('star', '/assets/images/star.png');
     game.load.spritesheet('dude', '/assets/images/dude.png',32,48);
